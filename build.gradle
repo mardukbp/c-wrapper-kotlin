@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies"
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:+"
+    }
+}
+
+apply plugin: 'konan'
+
+konan.targets = ['linux']
+
+konanArtifacts {
+        // Interoperability library kute.klib
+        // Use the default def-file path: src/main/c_interop/kute.def
+        interop('kute')
+
+        program('k-wrapper') {
+            libraries {
+                // Link with kute.klib
+                artifact 'kute'
+            }
+        }
+    }

@@ -1,0 +1,12 @@
+CMakeFiles/
+obsolete/
+build/
+.idea/
+Makefile
+*.o
+*.a
+*.so
+*.cbp
+*.cmake
+CMakeCache.txt
+

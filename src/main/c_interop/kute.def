@@ -1,0 +1,10 @@
+headers = /home/vbaggiol/CLionProjects/c-wrapper/src/mylib/MyWrapper.h
+#compilerOpts = -I/home/vbaggiol/ws-qt/DOtherSide/lib/include/
+
+#linkerOpts.linux = -L/home/vbaggiol/CLionProjects/c-wrapper/build/src/mylib -lmyLib
+#/home/vbaggiol/CLionProjects/c-wrapper/build/src/mylib/libmyLib.a
+staticLibraries = libmyLib.a
+libraryPaths = /home/vbaggiol/CLionProjects/c-wrapper/build/src/mylib
+
+#staticLibraries = libfoo.a
+#libraryPaths = /opt/local/lib /usr/local/opt/curl/lib
