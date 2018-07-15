@@ -15,14 +15,14 @@ apply plugin: 'konan'
 konan.targets = ['linux']
 
 konanArtifacts {
-        // Interoperability library kute.klib
-        // Use the default def-file path: src/main/c_interop/kute.def
-        interop('kute')
+        // Interoperability library wrapper.klib
+        // Use the default def-file path: src/main/c_interop/wrapper.def
+        interop('wrapper')
 
         program('k-wrapper') {
             libraries {
-                // Link with kute.klib
-                artifact 'kute'
+                // Link with wrapper.klib
+                artifact 'wrapper'
             }
         }
     }
