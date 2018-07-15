@@ -1,0 +1,4 @@
+headers = /tmp/c-wrapper/src/mylib/MyWrapper.h
+staticLibraries = libmyLib.a
+libraryPaths = /tmp/c-wrapper/build/src/mylib
+
