@@ -6,6 +6,6 @@ fun main(args: Array<String>) {
     val myClass = newMyClass()
     MyClass_int_set(myClass, 22)
     val ret = MyClass_int_get(myClass)
-    print("ret = $ret")
+    println("MyClass_int_get(myClass) yields: $ret")
     deleteMyClass(myClass)
 }
